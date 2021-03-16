@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link media="screen and (max-width:780px)" rel="stylesheet" href="css/media.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.gradientify.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="sidebar">
+            <div class="hide"><img src="img/Navigation.png" alt=""></div>
+            <div class="column">
+                <div class="cha"><img src="img/fork.png" alt=""></div>
+                <div class="header">
+                    <p></p>
+                    <h1>杨家兴</h1>
+                    <div class="msg">网页设计师</div>
+                </div>
+                <ul class="content">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">简历</a></li>
+                    <li><a href="#">作品</a></li>
+                    <li><a href="#">联系我</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h1>杨家兴个人网页</h1>
+            <p>男儿不展风云志，空负天生八尺躯。</p>
+        </div>
+        <div class="container1">
+            <div class="container1-1">
+                <div class="container1-01">
+                    <p></p>
+                    <h2>认识</h2>
+                </div>
+                <h2>关于我</h2>
+            </div>
+            <div class="container1-2">
+                <div class="picture"><img src="img/1.jpg" alt=""></div>
+                <div class="information">
+                    <h1>我是杨家兴</h1>
+                    <p>我是一名职业技术学校的一名学生，所学的专业是网页美术设计，我个人擅长HTML、css、ps、pr,jquery、JavaScript能力一般</p>
+                    <ul class="information1">
+                        <li>性别：男</li>
+                        <li>年龄：18</li>
+                        <li>地址：湖南省泸溪县</li>
+                        <li>专业：网页美术设计</li>
+                        <li>电话：16674326100</li>
+                        <li>邮箱：3053175252@qq.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="container2-1">
+                <div class="container2-01">
+                    <p></p>
+                    <h2>能力</h2>
+                </div>
+                <h2>我的技能</h2>
+            </div>
+            <div class="container2-2">
+                <div class="row clear">
+                    <div class="title">HTML</div>
+                    <div class="background"><div class="progress" data-value='95%' data-color="[{start:[255,250,240],stop:[255,255,0]},{start:[255,255,0],stop:[255,0,0]}]"></div></div>
+                    <div class="num" data-value="95">0%</div>
+                </div>
+                <div class="row clear">
+                    <div class="title">CSS</div>
+                    <div class="background"><div class="progress" data-value='90%' data-color="[{start:[158,217,0],stop:[0,255,0]},{start:[0,255,0],stop:[12,137,24]}]"></div></div>
+                    <div class="num" data-value="90">0%</div>
+                </div>
+                <div class="row clear">
+                    <div class="title">PS</div>
+                    <div class="background"><div class="progress" data-value='95%' data-color="[{start:[127,255,255],stop:[0,0,255]},{start:[0,0,255],stop:[0,55,114]}]"></div></div>
+                    <div class="num" data-value="95">0%</div>
+                </div>
+                <div class="row clear">
+                    <div class="title">PR</div>
+                    <div class="background"><div class="progress" data-value='87%' data-color="[{start:[244,198,224],stop:[140,75,187]},{start:[140,75,187],stop:[80,0,80]}]"></div></div>
+                    <div class="num" data-value="87">0%</div>
+                </div>
+                <div class="row clear">
+                    <div class="title">AI</div>
+                    <div class="background"><div class="progress" data-value='85%' data-color="[{start:[255,180,0],stop:[255,78,0]},{start:[255,180,0],stop:[255,78,0]}]"></div></div>
+                    <div class="num" data-value="85">0%</div>
+                </div>
+                <div class="row clear">
+                    <div class="title">AE</div>
+                    <div class="background"><div class="progress" data-value='85%' data-color="[{start:[0,255,192],stop:[252,255,0]},{start:[155,255,230],stop:[0,255,192]}]"></div></div>
+                    <div class="num" data-value="85">0%</div>
+                </div>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="container3-1">
+                <div class="container3-01">
+                    <p></p>
+                    <h2>我所做的</h2>
+                </div>
+                <h2>我的服务</h2>
+            </div>
+            <div class="container3-2">
+                <div class="container3-02">
+                    <h2>网页设计</h2>
+                    <p></p>
+                    <span>01</span>
+                </div>
+                <div class="container3-03">
+                    <h2>wed前端</h2>
+                    <span>02</span>
+                </div>
+            </div>
+            <button><a href="#">查看更多</a></button>
+        </div>
+    </main>
+</body>
+<script>
+    function setNumTimer(i,num,obj){
+	if(i <= num)
+	{
+		obj.find('.num').text(i+"%");
+		setTimeout(function(){setNumTimer(++i,num,obj)},50);
+	}
+}
+/*点击事件*/
+$(".hide1").click(function () {
+	$(".column").css({
+		left:"0%",
+        zIndex:"999",
+	})
+    $(".hide1").css({
+        opacity:"0",
+        zIndex:"-999",
+    })
+})
+$(".hide").click(function () {
+	$(".column").css({
+		left:"0%",
+        zIndex:"999",
+        transition:"0.6s",
+	})
+    $(".cha").css({
+        zIndex:"999",
+    })
+    $(".hide").css({
+        opacity:"0",
+        zIndex:"-999",
+        transition:"0.6s",
+    })
+})
+$(".cha").click(function () {
+	$(".column").css({
+		left:"-100%",
+        transition:"0.6s",
+	})
+    $(".hide").css({
+        opacity:"1",
+        zIndex:"999",
+    })
+})
+</script>
+</html>

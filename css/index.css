@@ -1,0 +1,485 @@
+*{
+    margin:auto 0;
+    padding: 0;
+}
+/* 去掉ul标签前面那个点 */
+ul{list-style: none;}
+/* 去掉a标签下划线 */
+a{text-decoration: none;}
+nav{
+    width: 100%;
+    height: 100vh;
+    background: rgba(135, 255,231);
+    background-position: center;
+    background-attachment: fixed;
+    position: absolute;
+    position: fixed;
+}
+
+
+/* 侧栏导航---------------------------------------------------------- */
+/* 整块背景 */
+.sidebar{
+    width: 20%;
+    height: 100vh;
+    margin:-2% 1%;
+    background: springgreen;
+}
+/* 隐藏导航 */
+.sidebar .hide{
+    width: 50px;
+    position: absolute;
+    opacity: 0;
+    display: none;
+    top: 1%;
+    left: 2%;
+}
+.sidebar .hide img{
+    width: 100%;
+}
+/* 导航内容总框架 */
+.sidebar .column{
+    margin: 10%;
+    position: relative;
+    top: 5%;
+    left: 0%;
+}
+/* 叉叉 */
+.sidebar .column .cha{
+    width: 50px;
+    position: absolute;
+    opacity: 0;
+    top: -4%;
+}
+.sidebar .column .cha img{
+    width: 100%;
+}
+/* 头像部分框架 */
+.sidebar .column .header{
+    width: 100%;
+    height: 270px;
+    margin: auto;
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+/* 照片 */
+.sidebar .column .header p{
+    width: 150px;
+    height: 150px;
+    /* background: skyblue; */
+    background: url(../img/1.png)no-repeat;
+    background-position: center;
+    margin: auto;
+    border-radius: 50%;
+    /* overflow: hidden; */
+}
+/* 个人姓名 */
+.sidebar .column .header h1{
+    font-weight: 550;
+    margin-top: 10px;
+}
+/* 职位 */
+.sidebar .column .header .msg{
+    width: 150px;
+    height: 40px;
+    background:rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    margin:10px auto;
+    text-align: center;
+    line-height: 40px;
+    transition: 1s;
+    cursor: pointer;
+}
+/* 职位内容鼠标放上去效果 */
+.sidebar .column .header .msg:hover{
+    font-size: 18px;
+    background:rgba(255, 255, 255, 1);
+    transition: 1s;
+}
+/* 导航内容 */
+.sidebar .column .content{
+    width: 100%;
+    height: 300px;
+    margin: 30% auto;
+}
+/* 单独控制首页标签 */
+.sidebar .column .content li:nth-child(1){
+    width: 100%;
+    height: 40px;
+    background:rgba(255, 255, 255, 0.6);
+    margin: 10px auto;
+}
+/* 导航li标签 */
+.sidebar .column .content li{
+    width: 100%;
+    height: 40px;
+    /* background: turquoise; */
+    margin: 10px auto;
+    transition: 0.6s;
+    border-radius: 20px;
+}
+/* li标签鼠标放上去效果 */
+.sidebar .column .content li:hover{
+    background:rgba(255, 255, 255, 0.6);
+    transition: 0.6s;
+}
+/* 导航内容a标签 */
+.sidebar .column .content li a{
+    margin-left: 20%;
+    line-height: 40px;
+    font-size: 18px;
+    display: block;
+    color: #000;
+}
+
+/* 以上侧栏导航结束 */
+
+
+/* 内容板块框架 */
+main{
+    width: 78%;
+    position: absolute;
+    top: 5%;
+    right: 0;
+}
+
+
+/* 第一块背景 */
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/bg9.jpg)no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+/* 标题 */
+.container h1{
+    position: relative;
+    top: 40%;
+    font-size: 40px;
+}
+/* 副标题 */
+.container p{
+    position: relative;
+    top: 42%;
+    font-size: 24px;
+}
+/* 第二块背景 */
+.container1{
+    width: 100%;
+    height: 100vh;
+    background: #b1fff0;
+    /* background: url(../img/2.jpg)no-repeat; */
+    background-position: center;
+    background-attachment: fixed;
+}
+/* 控制框架两边宽度 */
+.container1 .container1-1{
+    margin:0 3%;
+    position: relative;
+    top: 5%;
+}
+/* 认识前面那条横线 */
+.container1 .container1-1 .container1-01 p{
+    width: 60px;
+    height: 2px;
+    background: #000;
+    display: inline-block;
+    border-radius: 5px;
+}
+/* 认识 */
+.container1 .container1-1 .container1-01 h2{
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    font-weight: 400;
+    left: 10px;
+}
+/* 关于我 */
+.container1 .container1-1 h2{
+    font-weight: 550;
+    margin:10px auto;
+}
+/* 第二块，第二段内容 */
+.container1 .container1-2{
+    margin:0 3%;
+    /* height: 100px; */
+    /* background: skyblue; */
+    position: relative;
+    top: 10%;
+}
+/* 左边的人物照片 */
+.container1 .container1-2 .picture{
+    width: 45%;
+    height: 510px;
+    background: tan;
+    overflow: hidden;
+    display: inline-block;
+}
+.container1 .container1-2 .picture img{
+    background-position: center;
+    width: 100%;
+    position: relative;
+    top: -30%;
+}
+/* 右边的详细信息 */
+.container1 .container1-2 .information{
+    width: 50%;
+    height: 550px;
+    /* background: snow; */
+    display: inline-block;
+    position: relative;
+    right: -5%;
+    top: 80px;
+}
+/* 姓名 */
+.container1 .container1-2 .information h1{
+    font-weight: 500;
+    position: absolute;
+    letter-spacing: 5px;
+}
+.container1 .container1-2 .information p{
+    width: 100%;
+    position: absolute;
+    height: 300px;
+    letter-spacing: 5px;
+    top: 15%;
+}
+/* 控制ul标签，详细信息的框架 */
+.container1 .container1-2 .information .information1{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+}
+/* 控制li标签的，就是每一个详细信息 */
+.container1 .container1-2 .information .information1 li{
+    font-size: 18px;
+    width: 50%;
+    line-height: 40px;
+}
+
+
+
+
+/* 第三块背景 */
+.container2{
+    width: 100%;
+    height: 100vh;
+    /* background: sienna; */
+}
+/* 控制框架两边宽度 */
+.container2 .container2-1{
+    margin:0 3%;
+    position: relative;
+    top: 5%;
+}
+/* 能力前面那条横线 */
+.container2 .container2-1 .container2-01 p{
+    width: 60px;
+    height: 2px;
+    background: #000;
+    display: inline-block;
+    border-radius: 5px;
+}
+/* 能力 */
+.container2 .container2-1 .container2-01 h2{
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    font-weight: 400;
+    left: 10px;
+}
+/* 我的技能 */
+.container2 .container2-1 h2{
+    font-weight: 550;
+    margin:10px auto;
+}
+.container2 .container2-2{
+    position: relative;
+    top: 15%;
+}
+.clear{
+	clear: both;
+}
+.title{
+    position: absolute;
+    font-size: 24px;
+}
+.row{
+	width:80%;
+	height:30px;
+	margin:50px auto;
+}
+.row div{
+	float:left;
+	height:30px;
+	line-height:30px;
+}
+.background{
+	width:80%;
+	height:30px;
+	border:1px solid #ccc;
+	border-radius: 10px;
+	background:#eee;
+	/* margin:0px 85px; */
+	overflow:hidden;
+    position: relative;
+    left: 10%;
+}
+.progress{
+	border-radius: 10px;
+	overflow:hidden;
+}
+.num{
+    position: relative;
+    left: 15%;
+    font-size: 18px;
+}
+
+
+
+
+/* 第四块背景----------------------------------------- */
+.container3{
+    width: 100%;
+    height: 100vh;
+    /* background: sienna; */
+}
+.container3 .container3-1{
+    margin:0 3%;
+    position: relative;
+    top: 5%;
+}
+/* 我所做的前面那条横线 */
+.container3 .container3-1 .container3-01 p{
+    width: 60px;
+    height: 2px;
+    background: #000;
+    display: inline-block;
+    border-radius: 5px;
+}
+/* 我所做的 */
+.container3 .container3-1 .container3-01 h2{
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    font-weight: 400;
+    left: 10px;
+}
+/* 我的服务 */
+.container3 .container3-1 h2{
+    font-weight: 550;
+    margin:10px auto;
+}
+.container3 .container3-2{
+    margin:0 5%;
+    position: relative;
+    top: 15%;
+    display: flex;
+    height: 400px;
+    /* background: seagreen; */
+}
+
+
+/* 网页设计板块 */
+.container3 .container3-2 .container3-02{
+    width: 45%;
+    height: 350px;
+    background: #fff;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    transition: 0.3s;
+    overflow: hidden;
+}
+.container3 .container3-2 .container3-02:hover{
+    position: absolute;
+    top: 2%;
+    transition: 0.3s;
+}
+.container3 .container3-2 .container3-02 h2{
+    font-weight: 500;
+    position: relative;
+    top: 5%;
+    left: 5%;
+}
+.container3 .container3-2 .container3-02 span{
+    font-size: 85px;
+    position: absolute;
+    right: 5%;
+    top: -9%;
+    opacity: 0;
+    transition: 0.6s;
+    color: rgba(57, 153, 134, 0.3);
+}
+.container3 .container3-2 .container3-02:hover span{
+    opacity: 1;
+    display: block;
+    transition: 0.6s;
+}
+
+
+/* wed前端 */
+.container3 .container3-2 .container3-03{
+    width: 45%;
+    height: 350px;
+    background: #fff;
+    position: absolute;
+    top: 5%;
+    right: 0;
+    transition: 0.3s;
+    overflow: hidden;
+}
+.container3 .container3-2 .container3-03:hover{
+    position: absolute;
+    top: 2%;
+    transition: 0.3s;
+}
+.container3 .container3-2 .container3-03 h2{
+    font-weight: 500;
+    position: relative;
+    top: 5%;
+    left: 5%;
+}
+.container3 .container3-2 .container3-03 span{
+    font-size: 85px;
+    position: absolute;
+    right: 5%;
+    top: -9%;
+    opacity: 0;
+    transition: 0.6s;
+    color: rgba(57, 153, 134, 0.3);
+}
+.container3 .container3-2 .container3-03:hover span{
+    opacity: 1;
+    display: block;
+    transition: 0.6s;
+}
+
+
+/* 按钮 */
+.container3 button{
+    position: relative;
+    top: 25%;
+    left: 45%;
+    width: 150px;
+    height: 50px;
+    background: #333;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.container3 button:hover{
+    position: relative;
+    top: 24%;
+    transition: 0.3s;
+}
+.container3 button a{
+    font-size:18px;
+    display: block;
+    color: #fff;
+}
